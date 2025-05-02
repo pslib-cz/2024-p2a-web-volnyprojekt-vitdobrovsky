@@ -17,4 +17,4 @@ Tento web slouží jako představení firmy Chaiomil, nikoliv jako e-shop. Obsah
 
 
 ## O Firmě
-Fiktivní firma Chaiomil prodává čaje od špičkových značek, ale také přináší čaje vlastní originální výroby. Vyrábí čaje podporující soustředění a kognitivní výkon, obohacené o přidaným kofeinem a dalšími látky na které pomůžou jak při práci, tak i při studiu.
+Fiktivní startup Chaiomil prodává své čaje vlastní originální výroby. Vyrábí čaje podporující soustředění a kognitivní výkon, obohacené o přidaným kofeinem a dalšími látky na které pomůžou jak při práci, tak i při studiu.
