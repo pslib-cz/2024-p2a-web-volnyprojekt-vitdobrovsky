@@ -5,4 +5,13 @@
 @import url("typography.css") layer(init);
 
 @layer init {
+  :root {
+    --primary: #feeb41;
+    --secondary: #313b4e;
+    --background: #ffffff;
+
+    --mobile-padding: 1rem;
+    --desktop-padding: 2rem;
+    --section-max-width: 1280px;
+  }
 }
