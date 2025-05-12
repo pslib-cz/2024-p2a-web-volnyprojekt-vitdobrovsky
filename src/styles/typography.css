@@ -1,8 +1,22 @@
 html {
   font-family: "Inter", sans-serif;
+  color: var(--secondary, #313b4e);
 }
 
 .heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+.logotype {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+}
+
+.logotype::before {
+  content: url("/images/logo.svg");
+  display: inline;
+  vertical-align: middle;
 }
