@@ -65,6 +65,8 @@
   bottom: 1000px;
   text-align: center;
   padding: 2rem 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-out 0.1s;
 }
 .navbar__link {
   padding: 1rem;
@@ -77,4 +79,5 @@
 }
 .navbar:has(.hamburger--active) .navbar__navigation {
   position: static;
+  opacity: 1;
 }
