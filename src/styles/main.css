@@ -31,4 +31,10 @@
     margin-top: 7rem;
     text-align: center;
   }
+  .page__intro--buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
