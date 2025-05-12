@@ -36,3 +36,26 @@
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--mobile-padding) var(--mobile-padding) 0 var(--mobile-padding);
+  --padding-x: 12px;
+  --padding-y: 16px;
+  padding: var(--padding-y, 16px) var(--padding-x, 12px);
+  border-radius: 8px;
+  background-color: #ffffffc2;
+  box-shadow: 0 0px 8px rgba(57, 57, 57, 0.1);
+  backdrop-filter: blur(8px);
+}
+.navbar__navigation {
+  display: none;
+}
+.navbar:has(.hamburger--active) {
+  margin: 0;
+  padding: calc(var(--mobile-padding) + var(--padding-y, 16px)) calc(var(--mobile-padding) + var(--padding-x, 12px));
+  padding-bottom: var(--padding-y, 16px);
+}
