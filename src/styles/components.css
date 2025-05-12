@@ -81,3 +81,17 @@
   position: static;
   opacity: 1;
 }
+
+/* button */
+.button {
+  padding: 16px 20px;
+  display: inline-block;
+  background-color: var(--primary, #feeb41);
+  border-radius: 1000px;
+  font-weight: 450;
+}
+.button--secondary {
+  background-color: var(--secondary, #313b4e);
+  color: #ffffff;
+  font-weight: 350;
+}
