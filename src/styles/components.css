@@ -39,9 +39,7 @@
 
 /* navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   margin: var(--mobile-padding) var(--mobile-padding) 0 var(--mobile-padding);
   --padding-x: 12px;
   --padding-y: 16px;
@@ -51,11 +49,26 @@
   box-shadow: 0 0px 8px rgba(57, 57, 57, 0.1);
   backdrop-filter: blur(8px);
 }
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar__navigation {
-  display: none;
+  position: absolute;
+  bottom: 1000px;
+  text-align: center;
+  padding: 2rem 0;
+}
+.navbar__link {
+  padding: 1rem;
+  font-weight: 500;
 }
 .navbar:has(.hamburger--active) {
   margin: 0;
   padding: calc(var(--mobile-padding) + var(--padding-y, 16px)) calc(var(--mobile-padding) + var(--padding-x, 12px));
   padding-bottom: var(--padding-y, 16px);
+}
+.navbar:has(.hamburger--active) .navbar__navigation {
+  position: static;
 }

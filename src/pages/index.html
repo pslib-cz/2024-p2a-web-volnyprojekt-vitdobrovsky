@@ -8,25 +8,28 @@
   <title>Chaiomil | Dávka energie a soustředění v každém šálku</title>
 
   <link rel="stylesheet" href="/src/styles/main.css">
+  <script type="module" src="/src/scripts/hamburger.js" defer></script>
 </head>
 
 <body>
 
   <header class="navbar">
-    <h2 class="logotype">Chaiomil</h2>
-    <nav>
-      <ul class="navbar__navigation">
-        <li><a href="#home">Domů</a></li>
-        <li><a href="/produkty/products.html">Produkty</a></li>
-        <li><a href="/kontakt/contact.html">Kontakt</a></li>
-        <li><a href="https://www.caj.cz/" target="_blank">Přejít do e-shopu</a></li>
+    <div class="navbar__wrapper">
+      <h2 class="logotype">Chaiomil</h2>
+      <button aria-lable="menu" class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+    <nav class="navbar__navigation">
+      <ul>
+        <li class="navbar__link"><a href="#home">Domů</a></li>
+        <li class="navbar__link"><a href="/produkty/products.html">Produkty</a></li>
+        <li class="navbar__link"><a href="/kontakt/contact.html">Kontakt</a></li>
+        <li class="navbar__link"><a href="https://www.caj.cz/" target="_blank">Přejít do e-shopu</a></li>
       </ul>
     </nav>
-    <button aria-lable="menu" class="hamburger">
-      <span class="hamburger__line"></span>
-      <span class="hamburger__line"></span>
-      <span class="hamburger__line"></span>
-    </button>
   </header>
 
 
