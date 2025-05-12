@@ -14,6 +14,7 @@
   width: 100%;
   background-color: var(--secondary, #313b4e);
   border-radius: 1px;
+  transition: top 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 .hamburger__line:nth-child(1) {
   top: 0;
@@ -27,14 +28,14 @@
 }
 .hamburger--active .hamburger__line:nth-child(1) {
   top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 .hamburger--active .hamburger__line:nth-child(2) {
   opacity: 0;
 }
 .hamburger--active .hamburger__line:nth-child(3) {
   top: 50%;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 /* navbar */
