@@ -14,7 +14,7 @@
   width: 100%;
   background-color: var(--secondary, #313b4e);
   border-radius: 1px;
-  transition: top 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  transition: top 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 .hamburger__line:nth-child(1) {
   top: 0;
@@ -49,6 +49,11 @@
   background-color: #ffffffc2;
   box-shadow: 0 0px 8px rgba(57, 57, 57, 0.1);
   backdrop-filter: blur(8px);
+  transition: margin 0.2s ease-out, padding 0.2s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .navbar__wrapper {
   display: flex;
