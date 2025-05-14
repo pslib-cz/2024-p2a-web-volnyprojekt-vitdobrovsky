@@ -31,10 +31,26 @@
     margin-top: 7rem;
     text-align: center;
   }
-  .page__intro--buttons {
+  .page__intro-buttons {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+  .page__intro-products {
+    display: flex;
+    justify-content: center;
+  }
+  .page__intro-product:first-child {
+    margin-right: -7rem;
+    transform: rotate(-22deg) scale(0.9);
+  }
+  .page__intro-product:nth-child(2) {
+    position: relative;
+    z-index: 10;
+  }
+  .page__intro-product:last-child {
+    margin-left: -7rem;
+    transform: rotate(22deg) scale(0.9);
   }
 }

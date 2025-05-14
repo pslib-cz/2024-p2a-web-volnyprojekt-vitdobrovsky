@@ -39,11 +39,14 @@
 }
 
 /* navbar */
-.navbar {
+.page {
+  height: 10202px;
   position: relative;
-  margin: var(--mobile-padding) var(--mobile-padding) 0 var(--mobile-padding);
+}
+.navbar {
   --padding-x: 12px;
   --padding-y: 16px;
+  margin: var(--mobile-padding) var(--mobile-padding) 0 var(--mobile-padding);
   padding: var(--padding-y, 16px) var(--padding-x, 12px);
   border-radius: 8px;
   background-color: #ffffffc2;
@@ -51,6 +54,7 @@
   backdrop-filter: blur(8px);
   transition: margin 0.2s ease-out, padding 0.2s ease-out;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
