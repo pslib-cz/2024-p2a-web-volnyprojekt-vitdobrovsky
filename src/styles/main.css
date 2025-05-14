@@ -41,6 +41,7 @@
     padding: 0 calc(var(--mobile-padding) + 2rem);
     display: flex;
     justify-content: center;
+    align-items: end;
   }
   .page__intro-product:first-child {
     margin-right: -7rem;
