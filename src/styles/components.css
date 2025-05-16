@@ -61,12 +61,14 @@
   align-items: center;
 }
 .navbar__navigation {
-  position: absolute;
-  bottom: 1000px;
+  transition: opacity 0.1s ease-out, height 0.2s ease-out;
   text-align: center;
-  padding: 2rem 0;
+  padding: 0;
   opacity: 0;
-  transition: opacity 0.4s ease-out 0.1s;
+  height: 0rem;
+  vertical-align: center;
+  display: grid;
+  place-content: center;
 }
 .navbar__link {
   padding: 1rem;
@@ -78,7 +80,9 @@
   padding-bottom: var(--padding-y, 16px);
 }
 .navbar:has(.hamburger--active) .navbar__navigation {
+  transition: opacity 0.4s ease-out 0.1s, height 0.2s ease-out;
   position: static;
+  height: 20rem;
   opacity: 1;
 }
 
