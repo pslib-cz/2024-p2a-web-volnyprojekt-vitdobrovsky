@@ -80,7 +80,7 @@
     border-bottom-left-radius: 100% 5%;
     border-bottom-right-radius: 100% 5%;
   }
-  .page__about-product-cards {
+  .page__benefit-cards {
     display: grid;
     gap: 1.15rem;
   }
