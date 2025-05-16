@@ -14,7 +14,6 @@
     --desktop-padding: 2rem;
     --section-max-width: 1280px;
   }
-
   a {
     color: var(--secondary, #313b4e);
     text-decoration: none;
@@ -28,6 +27,7 @@
 
 @layer design {
   .page__intro {
+    padding: 0 var(--mobile-padding);
     margin-top: 7rem;
     text-align: center;
   }
