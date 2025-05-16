@@ -103,3 +103,14 @@
   margin: 0;
   padding: 0;
 }
+
+/* card */
+.card {
+  background-color: var(--secondary);
+  color: var(--text-light);
+  padding: 1rem;
+  border-radius: 16px;
+}
+.card__description {
+  font-weight: 300;
+}
