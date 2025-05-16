@@ -26,10 +26,18 @@
 }
 
 @layer design {
+  /* intro */
   .page__intro {
-    padding: 0 var(--mobile-padding);
-    margin-top: 7rem;
+    padding: 7rem var(--mobile-padding) 0 var(--mobile-padding);
     text-align: center;
+    height: 80vh;
+    min-height: 700px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
   }
   .page__intro-buttons {
     margin-top: 2rem;
@@ -42,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    max-width: 650px;
   }
   .page__intro-product:first-child {
     margin-right: -7rem;
