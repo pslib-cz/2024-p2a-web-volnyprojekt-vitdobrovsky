@@ -84,7 +84,7 @@
 
 /* button */
 .button {
-  padding: 16px 20px;
+  padding: 1rem 1.25rem;
   display: inline-block;
   background-color: var(--primary, #feeb41);
   border-radius: 1000px;

@@ -22,10 +22,20 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 0.75rem;
 }
 .heading--h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.heading--h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.heading--prefix {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 .paragraph {
   font-weight: 400;

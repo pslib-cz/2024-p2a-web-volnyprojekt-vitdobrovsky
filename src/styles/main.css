@@ -31,7 +31,7 @@
     padding: 7rem var(--mobile-padding) 0 var(--mobile-padding);
     text-align: center;
     height: 80vh;
-    min-height: 700px;
+    min-height: 40rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -46,14 +46,14 @@
     gap: 1rem;
   }
   .page__intro-products {
-    padding: 0 calc(var(--mobile-padding) + 2rem);
+    padding: 0 calc(var(--mobile-padding) + 0.5rem);
     display: flex;
     justify-content: center;
     align-items: end;
-    max-width: 650px;
+    max-width: 40rem;
   }
   .page__intro-product:first-child {
-    margin-right: -7rem;
+    margin-right: -20%;
     transform: rotate(-22deg) scale(0.9);
   }
   .page__intro-product:nth-child(2) {
@@ -61,7 +61,7 @@
     z-index: 10;
   }
   .page__intro-product:last-child {
-    margin-left: -7rem;
+    margin-left: -20%;
     transform: rotate(22deg) scale(0.9);
   }
 }
