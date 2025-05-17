@@ -27,7 +27,7 @@ gsap.to(".tilt-left", {
   ease: "none",
   duration: 2,
 });
-gsap.to(".card__icon", {
+gsap.to(".page__product-benefits .card__icon", {
   scrollTrigger: {
     trigger: ".page__product-benefits",
     start: "top 60%",
