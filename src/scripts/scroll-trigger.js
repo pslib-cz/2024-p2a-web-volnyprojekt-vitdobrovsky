@@ -3,39 +3,48 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".tilt-right", {
-  scrollTrigger: {
-    trigger: ".tilt-right",
-    start: "top 80%",
-    end: "top 30%",
-    scrub: 1,
-    markers: false,
-  },
-  rotation: 8,
-  ease: "none",
-  duration: 2,
+document.querySelectorAll(".tilt-right").forEach((tiltRight) => {
+  gsap.to(tiltRight, {
+    scrollTrigger: {
+      trigger: tiltRight,
+      start: "top 80%",
+      end: "top 30%",
+      scrub: 1,
+      markers: false,
+    },
+    rotation: 8,
+    ease: "none",
+    duration: 2,
+  });
 });
-gsap.to(".tilt-left", {
-  scrollTrigger: {
-    trigger: ".tilt-left",
-    start: "top 80%",
-    end: "top 30%",
-    scrub: 1,
-    markers: false,
-  },
-  rotation: -8,
-  ease: "none",
-  duration: 2,
+document.querySelectorAll(".tilt-left").forEach((tiltLeft) => {
+  gsap.to(tiltLeft, {
+    scrollTrigger: {
+      trigger: tiltLeft,
+      start: "top 80%",
+      end: "top 30%",
+      scrub: 1,
+      markers: false,
+    },
+    rotation: -8,
+    ease: "none",
+    duration: 2,
+  });
 });
-gsap.to(".page__product-benefits .card__icon", {
-  scrollTrigger: {
-    trigger: ".page__product-benefits",
-    start: "top 60%",
-    end: "top 30%",
-    scrub: 1,
-    markers: false,
-  },
-  ease: "none",
-  duration: 2,
-  scale: 1.2,
+
+document.querySelectorAll(".card").forEach((card) => {
+  gsap.to(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 60%",
+      end: "top 40%",
+      scrub: true,
+      markers: false,
+    },
+    scale: 1.008,
+    ease: "power1.out",
+    duration: 2,
+    yoyo: true,
+    repeat: 1,
+  });
 });
