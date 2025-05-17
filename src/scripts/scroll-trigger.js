@@ -27,3 +27,15 @@ gsap.to(".tilt-left", {
   ease: "none",
   duration: 2,
 });
+gsap.to(".card__icon", {
+  scrollTrigger: {
+    trigger: ".page__product-benefits",
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 1,
+    markers: false,
+  },
+  ease: "none",
+  duration: 2,
+  scale: 1.2,
+});
