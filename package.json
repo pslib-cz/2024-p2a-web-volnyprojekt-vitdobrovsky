@@ -15,6 +15,7 @@
     "vituum": "^1.2.0"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
     "normalize.css": "^8.0.1"
   }
 }
