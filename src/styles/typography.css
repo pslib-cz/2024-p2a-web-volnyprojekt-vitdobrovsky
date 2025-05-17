@@ -33,7 +33,7 @@ html {
   font-weight: 600;
 }
 .heading--h3 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
@@ -47,4 +47,7 @@ html {
   font-weight: 400;
   line-height: 1.25;
   margin: 0;
+}
+.paragraph--light {
+  font-weight: 250;
 }

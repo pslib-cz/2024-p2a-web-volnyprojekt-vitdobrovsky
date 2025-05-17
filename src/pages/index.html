@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/src/styles/main.css">
   <script type="module" src="/src/scripts/hamburger.js" defer></script>
   <script type="module" src="/src/scripts/scroll-trigger.js" defer></script>
+  <script type="module" src="/src/scripts/swiper.js" defer></script>
 </head>
 
 <body class="page">
@@ -73,7 +74,7 @@
         <div class="page__benefit-cards">
           <div class="card">
             <h3 class="heading heading--h3">Podpora produktivity</h3>
-            <p class="paragraph card__description">Směsi navržené pro chvíle, kdy se chceš dostat do tempa, soustředit
+            <p class="paragraph paragraph--light">Směsi navržené pro chvíle, kdy se chceš dostat do tempa, soustředit
               se
               a
               zvládnout víc.</p>
@@ -88,7 +89,7 @@
           </div>
           <div class="card">
             <h3 class="heading heading--h3">Zlepšení soustředění</h3>
-            <p class="paragraph card__description">Pomáhá udržet pozornost, snížit rozptylování a podpořit mentální
+            <p class="paragraph paragraph--light">Pomáhá udržet pozornost, snížit rozptylování a podpořit mentální
               výkon
               při studiu i práci.</p>
             <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -102,7 +103,7 @@
           </div>
           <div class="card">
             <h3 class="heading heading--h3">Mentální rovnováha</h3>
-            <p class="paragraph card__description">Byliny přispívají ke klidné mysli a odolnosti vůči stresu -
+            <p class="paragraph paragraph--light">Byliny přispívají ke klidné mysli a odolnosti vůči stresu -
               dlouhodobá
               výkonnost bez vyhoření.</p>
             <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -123,7 +124,7 @@
           </div>
           <div class="card">
             <h3 class="heading heading--h3">Přirozená energie</h3>
-            <p class="paragraph card__description">Povzbuzující směsi s přírodním kofeinem a bylinami dodají energii bez
+            <p class="paragraph paragraph--light">Povzbuzující směsi s přírodním kofeinem a bylinami dodají energii bez
               výkyvů únavy.</p>
             <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -174,6 +175,66 @@
           </div>
         </div>
       </article>
+    </section>
+
+    <section class="page__product-list">
+      <p class="heading heading--prefix">Produkty</p>
+      <h2 class="heading heading--h2">Trio které tě posune dál</h2>
+
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3 class="heading heading--h3">Dostaň se do stavu flow</h3>
+            <p class="paragraph paragraph--light">
+              Tento čaj vznikl pro chvíle, kdy potřebuješ maximální soustředění, klidnou mysl a tah na cíl. Pomůže ti
+              zklidnit rušivé myšlenky, zlepšit koncentraci a naladit se na rytmus produktivního dne. Vychutnej si směs
+              pečlivě vybraných bylin, které harmonizují tělo i mysl a podpoří tě v každé pracovní výzvě.
+            </p>
+            <a href="https://www.caj.cz/japan-kagoshima-minami-kyushu-premium-sencha-asanokacz-bio-004~z335-000725.html"
+              target="_blank" class="button swiper__button">Koupit čaj Flow</a>
+            <picture class="swiper__image">
+              <source srcset="/images/mockups/energy.avif" type="image/avif">
+              <source srcset="/images/mockups/energy.png" type="image/png">
+              <img class="image-responsive" src="/images/mockups/energy.png" height="423" width="656"
+                alt="Čaj Energy - Chaiomil">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <h3 class="heading heading--h3">Zaměř se na to důležité</h3>
+            <p class="paragraph paragraph--light">Focus ti pomůže udržet pozornost, zlepšit paměť a vyčistit hlavu od
+              rozptýlení. Je navržený pro chvíle, kdy se potřebuješ hluboce ponořit do učení, čtení nebo analytické
+              práce. Vychutnej si byliny, které podporují mentální výkon a pomohou ti zůstat plně přítomen u každého
+              úkolu.</p>
+            <a href="https://www.caj.cz/japan-kagoshima-minami-kyushu-premium-sencha-asanokacz-bio-004~z335-000725.html"
+              target="_blank" class="button swiper__button">Koupit čaj Focus</a>
+            <picture class="swiper__image ">
+              <source srcset="/images/mockups/focus.avif" type="image/avif">
+              <source srcset="/images/mockups/focus.png" type="image/png">
+              <img class="image-responsive" src="/images/mockups/focus.png" height="423" width="656"
+                alt="Čaj Focus - Chaiomil">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <h3 class="heading heading--h3">Nakopni svůj den přírodní silou</h3>
+            <p class="paragraph paragraph--light">Energy je čaj, který tě postaví na nohy - rychle, ale šetrně. Obsahuje
+              přírodní kofein z bylin jako je yerba maté nebo guarana, takže tě povzbudí bez zbytečných výkyvů energie.
+              Ideální pro náročná rána, dlouhé pracovní dny nebo chvíle, kdy potřebuješ energii navíc a nechceš sahat po
+              kávě.</p>
+            <a href="https://www.caj.cz/japan-kagoshima-minami-kyushu-premium-sencha-asanokacz-bio-004~z335-000725.html"
+              target="_blank" class="button swiper__button">Koupit čaj Energy</a>
+            <picture class="swiper__image">
+              <source srcset="/images/mockups/flow.avif" type="image/avif">
+              <source srcset="/images/mockups/flow.png" type="image/png">
+              <img class="image-responsive" src="/images/mockups/flow.png" height="423" width="656"
+                alt="Čaj Flow - Chaiomil">
+            </picture>
+          </div>
+        </div>
+
+
+
+      </div>
     </section>
   </main>
 
