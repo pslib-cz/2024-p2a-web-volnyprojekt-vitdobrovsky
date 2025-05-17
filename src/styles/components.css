@@ -14,7 +14,9 @@
   width: 100%;
   background-color: var(--secondary, #313b4e);
   border-radius: 1px;
-  transition: top 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+  --rotate-time: 0.2s;
+  --move-time: 0.2s;
+  transition: translate var(--move-time) ease var(--rotate-time), bottom var(--move-time) ease var(--rotate-time), top var(--move-time) ease var(--rotate-time), rotate var(--rotate-time) ease;
 }
 .hamburger__line:nth-child(1) {
   top: 0;
@@ -26,16 +28,21 @@
 .hamburger__line:nth-child(3) {
   bottom: 0;
 }
+.hamburger--active .hamburger__line {
+  transition: translate var(--move-time) ease, bottom var(--move-time) ease, top var(--move-time) ease, rotate var(--rotate-time) ease var(--move-time);
+}
 .hamburger--active .hamburger__line:nth-child(1) {
   top: 50%;
-  transform: translateY(-50%) rotate(45deg);
+  rotate: 45deg;
+  translate: 0 -50%;
 }
 .hamburger--active .hamburger__line:nth-child(2) {
   opacity: 0;
 }
 .hamburger--active .hamburger__line:nth-child(3) {
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  bottom: 50%;
+  rotate: -45deg;
+  translate: 0 50%;
 }
 
 /* navbar */
