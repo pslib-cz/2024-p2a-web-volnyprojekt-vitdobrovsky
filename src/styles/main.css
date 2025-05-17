@@ -45,6 +45,9 @@
     gap: 4rem;
     height: 80vh;
     min-height: fit-content;
+    background-image: url("/images/patterns/pattern-small.svg");
+    background-size: cover;
+    background-position: left;
   }
   .page__intro-buttons {
     margin-top: 2rem;
@@ -98,7 +101,7 @@
   }
   .page__product-introduction-row {
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: center;
   }
   .page__product-introduction-row:nth-child(2n + 1) {
