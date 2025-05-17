@@ -14,7 +14,6 @@
     transform: rotate(22deg) scale(0.9) translateX(0);
   }
 }
-
 @keyframes load-up {
   0% {
     opacity: 0.5;
@@ -26,14 +25,4 @@
   100% {
     transform: translateY(0);
   }
-}
-
-.page__intro-products {
-  animation: load-up 1s ease-out forwards;
-}
-.page__intro-product:first-child {
-  animation: intro-product-left 1s ease-out forwards;
-}
-.page__intro-product:last-child {
-  animation: intro-product-right 1s ease-out forwards;
 }

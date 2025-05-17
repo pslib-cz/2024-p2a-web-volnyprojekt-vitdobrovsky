@@ -5,7 +5,6 @@
 @import url("animations.css") layer(animations);
 @import url("components.css") layer(components);
 
-
 @layer init {
   :root {
     --primary: #feeb41;
@@ -56,10 +55,11 @@
     justify-content: center;
     align-items: end;
     max-width: 30rem;
+    animation: load-up 1s ease-out;
   }
   .page__intro-product:first-child {
     margin-right: var(--offset-to-middle);
-    transform: rotate(-22deg) scale(0.9);
+    animation: intro-product-left 1s ease-out forwards;
   }
   .page__intro-product:nth-child(2) {
     position: relative;
@@ -67,11 +67,11 @@
   }
   .page__intro-product:last-child {
     margin-left: var(--offset-to-middle);
-    transform: rotate(22deg) scale(0.9);
+    animation: intro-product-right 1s ease-out forwards;
   }
 
   /* about products */
-  .page__about-product {
+  .page__product-introduction {
     --offset: 5rem;
     padding: 7rem var(--mobile-padding);
     padding-top: calc(7rem + var(--offset));
@@ -81,9 +81,40 @@
     border-top-right-radius: 100% 5%;
     border-bottom-left-radius: 100% 5%;
     border-bottom-right-radius: 100% 5%;
+    overflow: hidden;
+    display: grid;
+    gap: 7.75rem;
   }
   .page__benefit-cards {
     display: grid;
     gap: 1.15rem;
+  }
+  .page__product-introduction-about {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .page__product-introduction-row {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .page__product-introduction-row:nth-child(2n + 1) {
+    grid-template-columns: 2fr 1fr;
+  }
+  .page__product-introduction-row:nth-child(2n + 2) {
+    grid-template-columns: 1fr 2fr;
+  }
+  .page__product-introduction-image {
+    align-content: center;
+    --offset: -3rem;
+  }
+  .page__product-introduction-row:nth-child(2n + 2) .page__product-introduction-image {
+    margin-left: var(--offset);
+  }
+  .page__product-introduction-row:nth-child(2n + 1) .page__product-introduction-image {
+    margin-right: var(--offset);
+  }
+  .page__product-introduction-button {
+    margin-top: 1.25rem;
   }
 }
