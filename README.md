@@ -2,7 +2,7 @@
 
 Tento web slouží jako představení firmy Chaiomil, nikoliv jako e-shop. Obsahuje následující stránky:
 
-- **Landing Page**: Úvodní stránka s přehledem firmy a její nabídky.
+- **Home Page**: Úvodní stránka s přehledem firmy a její nabídky.
 - **Ukázka Produktů**: Představení vybraných produktů firmy.
 - **Kontakt**: Kontaktní údaje a formulář pro spojení s firmou.
 
