@@ -129,4 +129,9 @@
     padding: var(--section-gap) var(--mobile-padding);
     overflow: hidden;
   }
+
+  /* page footer */
+  .page__footer {
+    margin-top: var(--section-gap);
+  }
 }

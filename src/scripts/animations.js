@@ -65,7 +65,7 @@ tl.to(".footer__pot", {
   transformOrigin: "50% 50%",
   duration: 0.5,
 });
-tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.in" });
+tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.inOut" });
 tl.call(() => {
   document.querySelector(".footer__water").classList.add("footer__water--loaded");
 });

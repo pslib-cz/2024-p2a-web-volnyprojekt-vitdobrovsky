@@ -37,6 +37,11 @@ html {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
+.heading--h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 650;
+}
 .heading--prefix {
   font-size: 1rem;
   font-weight: 400;
