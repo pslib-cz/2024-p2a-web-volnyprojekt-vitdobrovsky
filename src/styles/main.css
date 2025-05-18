@@ -35,9 +35,6 @@
 @layer design {
   /* intro */
   .page__intro {
-    padding: 7rem var(--mobile-padding) 0 var(--mobile-padding);
-    text-align: center;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,6 +45,12 @@
     background-image: url("/images/patterns/pattern-small.svg");
     background-size: cover;
     background-position: left;
+  }
+  .page__small-intro,
+  .page__intro {
+    padding: 7rem var(--mobile-padding) 0 var(--mobile-padding);
+    text-align: center;
+    box-sizing: border-box;
   }
   .page__intro-buttons {
     margin-top: 2rem;
