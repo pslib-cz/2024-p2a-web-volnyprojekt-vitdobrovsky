@@ -22,6 +22,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 0;
+  letter-spacing: 0.025em;
 }
 .heading--h1 {
   font-size: 1.75rem;
@@ -30,7 +31,7 @@ html {
 .heading--h2 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: 650;
 }
 .heading--h3 {
   font-size: 1.15rem;
@@ -49,7 +50,7 @@ html {
   margin-bottom: 0.25rem;
 }
 .paragraph {
-  font-weight: 400;
+  font-weight: 350;
   line-height: 1.25;
   margin: 0;
 }
