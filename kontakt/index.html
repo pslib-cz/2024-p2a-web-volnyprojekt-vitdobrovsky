@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtky| Chaiomil</title>
+    <title>Kontakt | Chaiomil</title>
 
   <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/assets/hamburger-Cf5u4y7O.js"></script>
@@ -25,8 +25,8 @@
         <nav class="navbar__navigation">
             <menu>
                 <li class="navbar__link"><a href="/">Domů</a></li>
-                <li class="navbar__link"><a href="#home">Produkty</a></li>
-                <li class="navbar__link"><a href="/kontakt/">Kontakt</a></li>
+                <li class="navbar__link"><a href="/produkty/">Produkty</a></li>
+                <li class="navbar__link"><a href="#home">Kontakt</a></li>
                 <li class="navbar__link"><a href="https://www.caj.cz/" target="_blank" class="button">Přejít do
                         e-shopu</a></li>
             </menu>
@@ -36,74 +36,40 @@
     <main class="page__content">
         <section class="page__small-intro" id="home">
             <div>
-                <h1 class="heading heading--h1">Ponoř se do světa našich čajů Chaiomil</h1>
-                <p class="paragraph">Jestli ještě nevíš jaký čaj si vybrat nebo jen chceš zkusit nový, tak jsi tu na
-                    správným místě</p>
+                <h1 class="heading heading--h1">Kontaktuj nás</h1>
+                <p class="paragraph">Máš otázku, nabídku na spolupráci, nebo potřebuješ pomoct s objednávkou? Neváhej a
+                    napiš nám!</p>
             </div>
         </section>
+        <div class="page__contact">
+            <form class="form">
+                <h2 class="heading heading--h2 form__heading">E-mail formulář</h2>
+                <label class="form__label" for="name">Jméno</label>
+                <input class="form__input" type="text" id="name" name="name" required>
 
-        <section class="page__about-products">
-            <div class="page__product-introduction-about">
-                <div class="page__product-introduction-row">
-                    <div>
-                        <p class="tag">Nejprodávanější</p>
-                        <h3 class="heading heading--h2 page__product-introduction-heading">Sypaný čaj Flow</h3>
-                        <p class="paragraph">Pro chvíle, kdy potřebuješ <b>soustředění, ale i klid</b> a lehkost. Flow
-                            tě
-                            dostane do rytmu - ideální na <b>hlubokou práci</b>, psaní, tvorbu nebo plánování. Když
-                            chceš být
-                            ponořený, ale v pohodě.</p>
-                    </div>
-                    <picture class="page__product-introduction-image tilt-left">
-                        <source srcset="/images/mockups/flow.avif" type="image/avif">
-                        <source srcset="/images/mockups/flow.png" type="image/png">
-                        <img class="image-responsive" src="/images/mockups/flow.png" height="423" width="656"
-                            alt="Čaj Flow - Chaiomil">
-                    </picture>
-                </div>
+                <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="email" id="email" name="email" required>
 
-                <div class="page__product-introduction-row">
-                    <picture class="page__product-introduction-image tilt-right">
-                        <source srcset="/images/mockups/focus.avif" type="image/avif">
-                        <source srcset="/images/mockups/focus.png" type="image/png">
-                        <img class="image-responsive" src="/images/mockups/focus.png" height="423" width="656"
-                            alt="Čaj Focus - Chaiomil">
-                    </picture>
-                    <div>
-                        <p class="tag">špičková koncentrace</p>
-                        <h3 class="heading heading--h2 page__product-introduction-heading">Sypaný čaj Focus</h3>
-                        <p class="paragraph">Když je potřeba <b>zapnout naplno</b>. Focus pomáhá zacílit mysl, udržet
-                            koncentraci a <b>vytrvat u jednoho úkolu</b>. Skvělý pro studium, analýzu nebo práci, kde
-                            záleží na
-                            detailech.</p>
-                    </div>
-                </div>
+                <label class="form__label" for="message">Zpráva</label>
+                <textarea class="form__input" id="message" name="message" rows="4" required></textarea>
 
-                <div class="page__product-introduction-row">
-                    <div>
-                        <p class="tag">Nekonečná energie</p>
-                        <h3 class="heading heading--h2 page__product-introduction-heading">Sypaný čaj Energy</h3>
-                        <p class="paragraph">Když se rozjíždíš, nebo už nemůžeš. Energy <b>povzbudí</b> tělo i mysl -
-                            ideální
-                            ráno, během náročného dne i pro <b>noční tahy</b>. Přirozený zdroj energie bez <b>výkyvů a
-                                nervozity</b>.
-                        </p>
-                    </div>
-                    <picture class="page__product-introduction-image tilt-left">
-                        <source srcset="/images/mockups/energy.avif" type="image/avif">
-                        <source srcset="/images/mockups/energy.png" type="image/png">
-                        <img class="image-responsive" src="/images/mockups/energy.png" height="423" width="656"
-                            alt="Čaj Energy - Chaiomil">
-                    </picture>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="cta">
-            <h3 class="headign heading--h3 cta__heading">Už víš do kterého jít?</h3>
-            <a href="https://www.caj.cz/" target="_blank" class="button">Přejít na nákup</a>
-        </section>
+                <button class="form__button button" type="submit">Odeslat e-mail</button>
+            </form>
+            <iframe title="mapa sídla Chaiomil" class="image-responsive page__contact-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.953359741023!2d14.4446427!3d50.066870300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b947e305d9a2d%3A0x9b94b5a09c9f3f8b!2s1a%2C%20Vr%C5%A1ovick%C3%A1%201525%2C%20101%2000%20Vinohrady!5e1!3m2!1sen!2scz!4v1747575886412!5m2!1sen!2scz"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="page__contact-info">
+                <li><a class="page__contact-info-item" href="mailto:info@chaiomil.com"><b>E-mail:</b>
+                        info@chaiomil.com</a>
+                </li>
+                <li><a class="page__contact-info-item" href="tel:+420734545464"><b>Telefon:</b> +420 734 545 464</a>
+                </li>
+                <li><a class="page__contact-info-item" href="https://maps.app.goo.gl/mZBoXHmnyYMtXU4z6"
+                        target="_blank"><b>Lokace:</b> Vršovická
+                        1525/1A, Praha</a></li>
+            </ul>
+        </div>
     </main>
 
     <footer class="footer page__footer">
@@ -121,8 +87,8 @@
                 <h4 class="heading heading--h4">Obsah</h4>
                 <ul class="footer__list">
                     <li><a class="footer__list-item" href="/">Hlavní Strana</a></li>
-                    <li><a class="footer__list-item" href="#home">Produkty</a></li>
-                    <li><a class="footer__list-item" href="/kontakt/">Kontakt</a></li>
+                    <li><a class="footer__list-item" href="/produkty/">Produkty</a></li>
+                    <li><a class="footer__list-item" href="#home">Kontakt</a></li>
                 </ul>
             </div>
             <div>
@@ -151,6 +117,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>
