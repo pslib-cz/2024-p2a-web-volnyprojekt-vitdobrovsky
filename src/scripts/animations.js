@@ -63,6 +63,7 @@ tl.to(".footer__pot", {
   rotate: 30,
   x: +2,
   transformOrigin: "50% 50%",
+  duration: 0.5,
 });
 tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.in" });
 tl.call(() => {
