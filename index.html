@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chaiomil | Dávka energie a soustředění v každém šálku</title>
 
-  <script type="module" crossorigin src="/assets/index-AazS7w3C.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/hamburger-Cf5u4y7O.js">
-  <link rel="modulepreload" crossorigin href="/assets/animations-Cn6dzwxG.js">
-  <link rel="modulepreload" crossorigin href="/assets/swiper-CaC-2SrK.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-kHyTKcZu.css">
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/hamburger-Cf5u4y7O.js"></script>
+  <script type="module" crossorigin src="/assets/animations-Cn6dzwxG.js"></script>
+  <script type="module" crossorigin src="/assets/swiper-CaC-2SrK.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ybneIIIi.css">
 </head>
 
 <body class="page">
@@ -28,15 +28,15 @@
     <nav class="navbar__navigation">
       <menu>
         <li class="navbar__link"><a href="#home">Domů</a></li>
-        <li class="navbar__link"><a href="/produkty/products.html">Produkty</a></li>
-        <li class="navbar__link"><a href="/kontakt/contact.html">Kontakt</a></li>
+        <li class="navbar__link"><a href="/produkty/">Produkty</a></li>
+        <li class="navbar__link"><a href="/kontakt/">Kontakt</a></li>
         <li class="navbar__link"><a href="https://www.caj.cz/" target="_blank" class="button">Přejít do e-shopu</a></li>
       </menu>
     </nav>
   </header>
 
   <main>
-    <section class="page__intro">
+    <section id="home" class="page__intro">
       <div>
         <h1 class="heading heading--h1">Nejlepší čaje na podporu kognitivního výkonu</h1>
         <p class="paragraph">Začni svůj den s čajem, který podpoří soustředění, kreativitu a přirozenou energii.</p>
@@ -69,7 +69,7 @@
     </section>
 
     <section class="page__product-introduction" id="product-introduction">
-      <article class="page__product-benefits">
+      <div class="page__product-benefits">
         <p class="heading heading--prefix">Benefity</p>
         <h2 class="heading heading--h2">Naše čaje pomáhájí</h2>
         <div class="page__benefit-cards">
@@ -136,9 +136,9 @@
             </svg>
           </div>
         </div>
-      </article>
+      </div>
 
-      <article>
+      <div>
         <p class="heading heading--prefix">O čajích</p>
         <h2 class="heading heading--h2">Podpoř svůj výkon</h2>
         <div class="page__product-introduction-about">
@@ -175,7 +175,7 @@
             </div>
           </div>
         </div>
-      </article>
+      </div>
     </section>
 
     <section class="page__product-list">
@@ -258,7 +258,7 @@
       <div>
         <h4 class="heading heading--h4">Obsah</h4>
         <ul class="footer__list">
-          <li><a class="footer__list-item" href="/">Hlavní Strana</a></li>
+          <li><a class="footer__list-item" href="#home">Hlavní Strana</a></li>
           <li><a class="footer__list-item" href="/produkty/">Produkty</a></li>
           <li><a class="footer__list-item" href="/kontakt/">Kontakt</a></li>
         </ul>
