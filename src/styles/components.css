@@ -180,3 +180,17 @@
 .cta__heading {
   margin: 0;
 }
+
+/* footer */
+.footer__image {
+  display: none;
+  position: relative;
+  display: block;
+}
+.footer__water {
+  fill: transparent;
+  transition: fill 0.2s ease-out;
+}
+.footer__water--loaded {
+  fill: var(--primary);
+}

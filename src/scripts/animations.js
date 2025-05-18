@@ -1,7 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 document.querySelectorAll(".tilt-right").forEach((tiltRight) => {
   gsap.to(tiltRight, {
@@ -47,4 +48,21 @@ document.querySelectorAll(".card").forEach((card) => {
     yoyo: true,
     repeat: 1,
   });
+});
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".footer",
+    start: "top 90%",
+    markers: false,
+  },
+});
+tl.to(".footer__pot", {
+  rotate: 30,
+  x: +2,
+  transformOrigin: "50% 50%",
+});
+tl.from(".footer__water", { duration: 2, stagger: 0, drawSVG: 0, ease: "power1.in" });
+tl.call(() => {
+  document.querySelector(".footer__water").classList.add("footer__water--loaded");
 });
