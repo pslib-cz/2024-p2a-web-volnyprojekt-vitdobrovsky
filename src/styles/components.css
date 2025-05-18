@@ -68,7 +68,7 @@
   align-items: center;
 }
 .navbar__navigation {
-  transition: opacity 0.1s ease-out, height 0.2s ease-out;
+  transition: opacity 0.1s ease-out, height 0.2s ease-out, translate 0s ease-out 0.4s;
   text-align: center;
   padding: 0;
   opacity: 0;
@@ -76,6 +76,7 @@
   vertical-align: center;
   display: grid;
   place-content: center;
+  translate: -5000px -40000px;
 }
 .navbar__link {
   padding: 1rem;
@@ -89,6 +90,7 @@
   border-top-right-radius: 0;
 }
 .navbar:has(.hamburger--active) .navbar__navigation {
+  translate: 0 0;
   transition: opacity 0.4s ease-out 0.1s, height 0.2s ease-out;
   position: static;
   height: 20rem;

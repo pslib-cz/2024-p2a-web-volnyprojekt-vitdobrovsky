@@ -33,6 +33,11 @@
 }
 
 @layer design {
+  .page--products .page__content {
+    background-image: url("/images/patterns/pattern-mobile-big.svg");
+    background-size: cover;
+  }
+
   /* intro */
   .page__intro {
     display: flex;
@@ -42,7 +47,7 @@
     gap: 4rem;
     height: 80vh;
     min-height: fit-content;
-    background-image: url("/images/patterns/pattern-small.svg");
+    background-image: url("/images/patterns/pattern-mobile-small.svg");
     background-size: cover;
     background-position: left;
   }
