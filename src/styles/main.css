@@ -33,7 +33,7 @@
 }
 
 @layer design {
-  .page--products .page__content {
+  .page--bg .page__content {
     background-image: url("/images/patterns/pattern-mobile-big.svg");
     background-size: cover;
   }
@@ -148,6 +148,11 @@
   }
   .page__about-products .page__product-introduction-about {
     gap: 5.25rem;
+  }
+
+  /* contact */
+  .page__contact {
+    padding: var(--section-gap) var(--mobile-padding);
   }
 
   /* page footer */

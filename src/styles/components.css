@@ -104,6 +104,7 @@
   background-color: var(--primary, #feeb41);
   border-radius: 1000px;
   font-weight: 450;
+  border: none;
 }
 .button--secondary {
   background-color: var(--secondary, #313b4e);
@@ -197,6 +198,44 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   margin: 0;
+}
+
+/* from */
+.form {
+  background-color: var(--secondary);
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: -0.5rem;
+  margin-left: 0.4rem;
+  background-color: var(--secondary);
+  position: relative;
+  width: fit-content;
+}
+.form__input {
+  display: block;
+  padding: 1rem 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--text-light);
+  margin-bottom: 1.5rem;
+  color: inherit;
+  font-weight: 300;
+  border-radius: 4px;
+}
+.form__input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+.form__button {
+  display: block;
+  margin-top: 1.85rem;
+  margin-left: auto;
 }
 
 /* footer */
