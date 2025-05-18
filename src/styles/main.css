@@ -153,6 +153,23 @@
   /* contact */
   .page__contact {
     padding: var(--section-gap) var(--mobile-padding);
+    display: grid;
+    gap: 2rem;
+  }
+  .page__contact-map {
+    height: 500px;
+    border-radius: 16px;
+  }
+  .page__contact-info {
+    margin: 0;
+    margin-inline: auto;
+    padding: 0;
+    list-style: none;
+    width: fit-content;
+  }
+  .page__contact-info-item {
+    display: inline-block;
+    padding: 0.25rem 0;
   }
 
   /* page footer */

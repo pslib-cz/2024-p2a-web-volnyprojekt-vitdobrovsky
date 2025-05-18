@@ -103,7 +103,7 @@
   display: inline-block;
   background-color: var(--primary, #feeb41);
   border-radius: 1000px;
-  font-weight: 450;
+  font-weight: 400;
   border: none;
 }
 .button--secondary {
@@ -208,6 +208,9 @@
   border-radius: 16px;
   display: flex;
   flex-direction: column;
+}
+.form__heading {
+  font-weight: 550;
 }
 .form__label {
   font-size: 0.75rem;

@@ -61,7 +61,7 @@ let tl = gsap.timeline({
 });
 tl.to(".footer__pot", {
   rotate: 30,
-  x: +2,
+  x: 2,
   transformOrigin: "50% 50%",
   duration: 0.5,
 });
