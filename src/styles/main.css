@@ -21,6 +21,9 @@
     --desktop-padding: 2rem;
     --section-max-width: 1280px;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   a {
     color: var(--secondary, #313b4e);
     text-decoration: none;
