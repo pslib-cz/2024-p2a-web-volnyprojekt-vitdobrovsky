@@ -57,3 +57,9 @@ html {
 .paragraph--light {
   font-weight: 250;
 }
+
+@media screen and (min-width: 768px) {
+  .logotype {
+    font-size: 1.4rem;
+  }
+}
