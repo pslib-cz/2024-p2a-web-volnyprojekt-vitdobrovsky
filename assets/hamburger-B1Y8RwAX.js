@@ -1,0 +1,1 @@
+const e=document.querySelector(".hamburger");e.addEventListener("click",()=>{e.classList.toggle("hamburger--active")});document.addEventListener("click",t=>{e.contains(t.target)||e.classList.remove("hamburger--active")});
