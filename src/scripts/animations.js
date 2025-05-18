@@ -1,9 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
+// tilt object on scroll
 document.querySelectorAll(".tilt-right").forEach((tiltRight) => {
   gsap.to(tiltRight, {
     scrollTrigger: {
@@ -33,6 +33,7 @@ document.querySelectorAll(".tilt-left").forEach((tiltLeft) => {
   });
 });
 
+// card animation
 document.querySelectorAll(".card").forEach((card) => {
   gsap.to(card, {
     scrollTrigger: {
@@ -50,6 +51,7 @@ document.querySelectorAll(".card").forEach((card) => {
   });
 });
 
+// footer animation
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".footer",
@@ -62,7 +64,7 @@ tl.to(".footer__pot", {
   x: +2,
   transformOrigin: "50% 50%",
 });
-tl.from(".footer__water", { duration: 2, stagger: 0, drawSVG: 0, ease: "power1.in" });
+tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.in" });
 tl.call(() => {
   document.querySelector(".footer__water").classList.add("footer__water--loaded");
 });
