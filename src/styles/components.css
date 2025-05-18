@@ -186,6 +186,7 @@
   display: none;
   position: relative;
   display: block;
+  margin-bottom: -2px;
 }
 .footer__water {
   fill: transparent;
@@ -193,4 +194,8 @@
 }
 .footer__water--loaded {
   fill: var(--primary);
+}
+.footer__wrapper {
+  padding: 2rem var(--mobile-padding);
+  background-color: var(--primary);
 }
