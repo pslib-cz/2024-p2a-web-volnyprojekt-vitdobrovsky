@@ -291,9 +291,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  /* hamburger */
   .hamburger {
     display: none;
   }
+
+  /* navabar */
   .navbar {
     display: flex;
     justify-content: space-between;
