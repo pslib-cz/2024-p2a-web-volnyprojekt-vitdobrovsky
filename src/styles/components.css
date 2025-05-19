@@ -256,11 +256,17 @@
 }
 
 /* footer */
+.footer {
+  overflow: hidden;
+}
 .footer__image {
   display: none;
   position: relative;
   display: block;
   margin-bottom: -2px;
+}
+.footer__image--desktop {
+  display: none;
 }
 .footer__water {
   fill: transparent;
@@ -366,5 +372,15 @@
   }
   .swiper-button-next {
     right: calc(50% - 6rem);
+  }
+
+  /* footer */
+  .footer__image--mobile {
+    display: none;
+  }
+  .footer__image--desktop {
+    display: block;
+    min-height: 150px;
+    overflow: hidden;
   }
 }

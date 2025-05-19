@@ -67,7 +67,9 @@ tl.to(".footer__pot", {
 });
 tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.inOut" });
 tl.call(() => {
-  document.querySelector(".footer__water").classList.add("footer__water--loaded");
+  document.querySelectorAll(".footer__water").forEach((el) => {
+    el.classList.add("footer__water--loaded");
+  });
 });
 
 // navbar desktop animation
