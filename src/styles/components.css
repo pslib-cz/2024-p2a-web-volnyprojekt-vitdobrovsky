@@ -103,7 +103,7 @@
 
 /* button */
 .button {
-  padding: 0.75rem 1rem;
+  padding: 0.75em 1em;
   display: inline-block;
   background-color: var(--primary, #feeb41);
   border-radius: 1000px;
@@ -220,6 +220,7 @@
 }
 .form__heading {
   font-weight: 550;
+  margin-bottom: 1.75rem;
 }
 .form__label {
   font-size: 0.75rem;
@@ -246,7 +247,7 @@
 }
 .form__button {
   display: block;
-  margin-top: 1.85rem;
+  margin-top: 1.75rem;
   margin-left: auto;
 }
 
@@ -328,5 +329,6 @@
   }
   .navbar__link.button {
     margin-top: 0;
+    margin-left: var(--gap);
   }
 }

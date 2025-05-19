@@ -180,6 +180,7 @@
     margin-top: var(--section-gap);
   }
 
+  /* tablet */
   @media screen and (min-width: 768px) {
     :root {
       --page-padding: var(--desktop-padding);
@@ -215,7 +216,7 @@
       margin-top: 1.75rem;
     }
 
-    /* page overview */
+    /* product overview */
     .page__product-overview {
       border-top-left-radius: 100% 3%;
       border-top-right-radius: 100% 3%;
@@ -225,6 +226,12 @@
     .page__benefit-cards {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  /* desktop */
+  @media screen and (min-width: 1024px) {
+   
+    /* product overview */
     .page__product-introduction-content {
       gap: 0;
     }
