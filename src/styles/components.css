@@ -103,7 +103,7 @@
 
 /* button */
 .button {
-  padding: 0.75em 1em;
+  padding: 1em 1.25em;
   display: inline-block;
   background-color: var(--primary, #feeb41);
   border-radius: 1000px;
@@ -174,7 +174,7 @@
   margin-top: 1.25rem;
 }
 .swiper-pagination {
-  bottom: 2rem;
+  bottom: 2.5rem;
   transform: translateY(50%);
 }
 .swiper-pagination-bullet {
@@ -275,9 +275,11 @@
 .footer__water--loaded {
   fill: var(--primary);
 }
-.footer__wrapper {
-  padding: 2rem var(--page-padding);
+.footer__content {
   background-color: var(--primary);
+  padding: 2rem var(--page-padding);
+}
+.footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
@@ -346,6 +348,7 @@
 
   /* swiper */
   .swiper-slide {
+    padding: 1.75rem;
     padding-right: 40%;
   }
   .swiper__button {
@@ -364,7 +367,7 @@
     display: block;
     color: var(--text-light);
     top: auto;
-    bottom: 2rem;
+    bottom: 2.5rem;
     transform: translateY(50%) scale(0.6);
   }
   .swiper-button-prev {
@@ -382,5 +385,11 @@
     display: block;
     min-height: 150px;
     overflow: hidden;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--section-max-width);
+    margin-inline: auto;
   }
 }
