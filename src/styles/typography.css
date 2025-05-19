@@ -1,6 +1,7 @@
 html {
   font-family: "Inter", sans-serif;
   color: var(--text);
+  font-size: 1rem;
 }
 
 /* logo */
@@ -61,5 +62,21 @@ html {
 @media screen and (min-width: 768px) {
   .logotype {
     font-size: 1.4rem;
+  }
+  .heading--h1 {
+    font-size: 2.5rem;
+    font-weight: 750;
+  }
+  .heading--h2 {
+    font-size: 2rem;
+  }
+  .heading--h3 {
+    font-size: 1.5rem;
+  }
+  .heading--prefix {
+    font-size: 1.125rem;
+  }
+  .paragraph {
+    font-size: 1.125rem;
   }
 }

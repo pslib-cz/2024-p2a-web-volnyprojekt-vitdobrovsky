@@ -310,6 +310,9 @@
     display: flex;
     align-items: center;
   }
+  .navbar__link {
+    font-size: 1rem;
+  }
   .navbar__link:not(.button) {
     height: 100%;
     padding-block: 0;
