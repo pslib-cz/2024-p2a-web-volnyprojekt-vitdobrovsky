@@ -17,7 +17,7 @@
     --text-light: #ffffff;
 
     --section-gap: 7.75rem;
-    --mobile-padding: 1rem;
+    --page-padding: 1rem;
     --desktop-padding: 2rem;
     --section-max-width: 1280px;
   }
@@ -56,7 +56,7 @@
   }
   .page__small-intro,
   .page__intro {
-    padding: 7rem var(--mobile-padding) 0 var(--mobile-padding);
+    padding: 7rem var(--page-padding) 0 var(--page-padding);
     text-align: center;
     box-sizing: border-box;
   }
@@ -68,7 +68,7 @@
   }
   .page__intro-products {
     --offset-to-middle: -30%;
-    padding: 0 calc(var(--mobile-padding) + 0.5rem);
+    padding: 0 calc(var(--page-padding) + 0.5rem);
     display: flex;
     justify-content: center;
     align-items: end;
@@ -88,10 +88,10 @@
     animation: intro-product-right 1s ease-out forwards;
   }
 
-  /* about products */
-  .page__product-introduction {
+  /* product overview */
+  .page__product-overview {
     --offset: 5rem;
-    padding: calc(var(--section-gap) + var(--offset)) var(--mobile-padding);
+    padding: calc(var(--section-gap) + var(--offset)) var(--page-padding);
     margin-top: calc(-1 * var(--offset));
     background-color: var(--primary);
     border-top-left-radius: 100% 5%;
@@ -140,13 +140,13 @@
 
   /* product list */
   .page__product-list {
-    padding: var(--section-gap) var(--mobile-padding);
+    padding: var(--section-gap) var(--page-padding);
     overflow: hidden;
   }
 
   /* about products */
   .page__about-products {
-    padding: var(--section-gap) var(--mobile-padding);
+    padding: var(--section-gap) var(--page-padding);
     overflow: hidden;
   }
   .page__about-products .page__product-introduction-about {
@@ -155,7 +155,7 @@
 
   /* contact */
   .page__contact {
-    padding: var(--section-gap) var(--mobile-padding);
+    padding: var(--section-gap) var(--page-padding);
     display: grid;
     gap: 2rem;
   }
@@ -178,5 +178,30 @@
   /* page footer */
   .page__footer {
     margin-top: var(--section-gap);
+  }
+
+  @media screen and (min-width: 768px) {
+    :root {
+      --page-padding: var(--desktop-padding);
+    }
+    /* set max width */
+    .page__product-benefits,
+    .page__product-introduction,
+    .page__product-list {
+      max-width: var(--section-max-width);
+      margin-inline: auto;
+    }
+
+    /* intro */
+    .page__intro {
+      background-image: url("/images/patterns/pattern-desktop-small.svg");
+      background-position: center;
+      height: 95vh;
+      gap: 5rem;
+    }
+    .page__small-intro,
+    .page__intro {
+      padding-top: 11rem;
+    }
   }
 }

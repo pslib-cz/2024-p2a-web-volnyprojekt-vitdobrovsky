@@ -6,7 +6,7 @@ const swiper = new Swiper(".swiper", {
 
   direction: "horizontal",
   loop: true,
-  spaceBetween: 32,
+  spaceBetween: 48,
   touchEventsTarget: "container",
   simulateTouch: true,
 
