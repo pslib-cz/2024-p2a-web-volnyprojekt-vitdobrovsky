@@ -232,6 +232,11 @@
   @media screen and (min-width: 1024px) {
    
     /* product overview */
+    .page__product-overview {
+      background-image: url("/images/patterns/pattern-desktop-small-light.svg");
+      background-size: cover;
+      background-position: center;
+    }
     .page__product-introduction-content {
       gap: 0;
     }

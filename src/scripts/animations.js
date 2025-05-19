@@ -57,6 +57,7 @@ let tl = gsap.timeline({
     trigger: ".footer",
     start: "top 90%",
     markers: false,
+    duration: 0.25,
   },
 });
 tl.to(".footer__pot", {
@@ -65,7 +66,7 @@ tl.to(".footer__pot", {
   transformOrigin: "50% 50%",
   duration: 0.5,
 });
-tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power3.in" });
+tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.in" }, "-=0.25");
 tl.call(() => {
   document.querySelectorAll(".footer__water").forEach((el) => {
     el.classList.add("footer__water--loaded");
