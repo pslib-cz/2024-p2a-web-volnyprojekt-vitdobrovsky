@@ -106,7 +106,7 @@
     display: grid;
     gap: 1.15rem;
   }
-  .page__product-introduction-cards {
+  .page__product-introduction-content {
     display: grid;
     gap: 1.5rem;
   }
@@ -149,7 +149,7 @@
     padding: var(--section-gap) var(--page-padding);
     overflow: hidden;
   }
-  .page__about-products .page__product-introduction-cards {
+  .page__about-products .page__product-introduction-content {
     gap: 5.25rem;
   }
 
@@ -224,6 +224,18 @@
     }
     .page__benefit-cards {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .page__product-introduction-content {
+      gap: 0;
+    }
+    .page__product-introduction-row {
+      margin-top: -3rem;
+    }
+    .page__product-introduction-row {
+      gap: 15rem;
+    }
+    .page__product-introduction-image {
+      --offset: 0;
     }
   }
 }
