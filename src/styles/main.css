@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    max-width: 30rem;
+    max-width: 31rem;
     animation: load-up 1s ease-out;
   }
   .page__intro-product:first-child {
@@ -106,7 +106,7 @@
     display: grid;
     gap: 1.15rem;
   }
-  .page__product-introduction-about {
+  .page__product-introduction-cards {
     display: grid;
     gap: 1.5rem;
   }
@@ -149,7 +149,7 @@
     padding: var(--section-gap) var(--page-padding);
     overflow: hidden;
   }
-  .page__about-products .page__product-introduction-about {
+  .page__about-products .page__product-introduction-cards {
     gap: 5.25rem;
   }
 
@@ -183,6 +183,7 @@
   @media screen and (min-width: 768px) {
     :root {
       --page-padding: var(--desktop-padding);
+      --section-gap: 13rem;
     }
     /* set max width */
     .page__product-benefits,
@@ -199,9 +200,30 @@
       height: 95vh;
       gap: 5rem;
     }
-    .page__small-intro,
+    .page__intro .page__small-intro,
     .page__intro {
       padding-top: 11rem;
+    }
+    .page__intro-text {
+      max-width: 35rem;
+    }
+    .page__intro-paragraph {
+      max-width: 30rem;
+      margin-inline: auto;
+    }
+    .page__intro-buttons {
+      margin-top: 1.75rem;
+    }
+
+    /* page overview */
+    .page__product-overview {
+      border-top-left-radius: 100% 3%;
+      border-top-right-radius: 100% 3%;
+      border-bottom-left-radius: 100% 3%;
+      border-bottom-right-radius: 100% 3%;
+    }
+    .page__benefit-cards {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
