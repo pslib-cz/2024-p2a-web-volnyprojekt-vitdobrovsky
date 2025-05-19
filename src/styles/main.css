@@ -1,7 +1,7 @@
 @layer reset, init, typography, animations, components, design;
 @import url("normalize.css/normalize.css") layer(reset);
 @import "swiper/css" layer(init);
-@import "swiper/css/navigation" layer(inti);
+@import "swiper/css/navigation" layer(init);
 @import "swiper/css/pagination" layer(init);
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap") layer(reset);
 @import url("typography.css") layer(typography);
