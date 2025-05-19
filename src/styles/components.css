@@ -313,6 +313,7 @@
   .product-photo {
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.103));
   }
+
   /* button */
   .button {
     transition: border-radius 0.2s ease-out, transform 0.4s ease-out, background-color 0.2s ease-out, color 0.2s ease-out;
@@ -320,6 +321,11 @@
   .button:hover {
     border-bottom-right-radius: 200px;
     transform: scale(1.02);
+  }
+
+  /* tag */
+  .tag {
+    padding: 0.5rem 1rem;
   }
 
   /* navabar */

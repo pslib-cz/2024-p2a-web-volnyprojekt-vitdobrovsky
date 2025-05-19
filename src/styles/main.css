@@ -39,6 +39,7 @@
   .page--bg .page__content {
     background-image: url("/images/patterns/pattern-mobile-big.svg");
     background-size: cover;
+    background-position: center;
   }
 
   /* intro */
@@ -186,10 +187,15 @@
       --page-padding: var(--desktop-padding);
       --section-gap: 13rem;
     }
+    .page--bg .page__content {
+      background-image: url("/images/patterns/pattern-desktop-big.svg");
+    }
+
     /* set max width */
     .page__product-benefits,
     .page__product-introduction,
-    .page__product-list {
+    .page__product-list,
+    .page__about-products {
       max-width: var(--section-max-width);
       margin-inline: auto;
     }
@@ -206,7 +212,7 @@
       padding-top: 11rem;
     }
     .page__intro-text {
-      max-width: 35rem;
+      max-width: 50rem;
     }
     .page__intro-paragraph {
       max-width: 30rem;
@@ -230,7 +236,6 @@
 
   /* desktop */
   @media screen and (min-width: 1024px) {
-   
     /* product overview */
     .page__product-overview {
       background-image: url("/images/patterns/pattern-desktop-small-light.svg");
