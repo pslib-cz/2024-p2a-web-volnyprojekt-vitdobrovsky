@@ -69,3 +69,15 @@ tl.from(".footer__water", { duration: 1, stagger: 0, drawSVG: 0, ease: "power1.i
 tl.call(() => {
   document.querySelector(".footer__water").classList.add("footer__water--loaded");
 });
+
+// navbar desktop animation
+document.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  const navbar = document.querySelector(".navbar");
+
+  if (scrollPosition > 50) {
+    navbar.classList.add("navbar--scrolled");
+  } else {
+    navbar.classList.remove("navbar--scrolled");
+  }
+});

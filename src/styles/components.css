@@ -55,7 +55,7 @@
   background-color: #ffffffc2;
   box-shadow: 0 0px 8px rgba(57, 57, 57, 0.1);
   backdrop-filter: blur(8px);
-  transition: margin 0.2s ease-out, padding 0.2s ease-out;
+  transition: margin 0.2s ease-out, padding 0.2s ease-out, border-radius 0.2s ease-out;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -304,6 +304,11 @@
     padding: 0.75rem 1rem;
     max-width: var(--section-max-width);
     margin-inline: auto;
+  }
+  .navbar--scrolled {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   .navbar__navigation {
     opacity: 1;
