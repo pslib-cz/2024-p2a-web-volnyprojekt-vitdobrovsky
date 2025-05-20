@@ -157,6 +157,7 @@
   /* contact */
   .page__contact {
     padding: var(--section-gap) var(--page-padding);
+    padding-bottom: 0;
     display: grid;
     gap: 2rem;
   }
@@ -195,7 +196,8 @@
     .page__product-benefits,
     .page__product-introduction,
     .page__product-list,
-    .page__about-products {
+    .page__about-products,
+    .page__contact {
       max-width: var(--section-max-width);
       margin-inline: auto;
     }
@@ -231,6 +233,34 @@
     }
     .page__benefit-cards {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* contact */
+    .page__contact {
+      grid-template-areas:
+        "form form map"
+        "info info info";
+      gap: 2.5rem;
+    }
+
+    .page__contact-form {
+      grid-area: form;
+    }
+    .page__contact-map {
+      grid-area: map;
+    }
+    .page__contact-info {
+      grid-area: info;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .page__contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
     }
   }
 
