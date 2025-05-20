@@ -33,6 +33,10 @@ document.querySelectorAll(".tilt-left").forEach((tiltLeft) => {
   });
 });
 
+function isDesktop() {
+  return window.matchMedia("(min-width: 1024px)").matches;
+}
+
 // card animation
 document.querySelectorAll(".card").forEach((card) => {
   gsap.to(card, {
@@ -43,7 +47,7 @@ document.querySelectorAll(".card").forEach((card) => {
       scrub: true,
       markers: false,
     },
-    scale: 1.008,
+    scale: isDesktop() ? 1 : 1.008,
     ease: "power1.out",
     duration: 2,
     yoyo: true,

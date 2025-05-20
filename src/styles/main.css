@@ -242,7 +242,6 @@
         "info info info";
       gap: 2.5rem;
     }
-
     .page__contact-form {
       grid-area: form;
     }

@@ -291,7 +291,7 @@
   font-size: 0.85rem;
 }
 .footer__list-item {
-  padding: 0.25rem 0;
+  padding: 0.4rem 0;
   display: block;
 }
 .footer__logo-and-copyright {
@@ -365,7 +365,7 @@
     content: "";
     display: block;
     width: 0%;
-    height: 0.15rem;
+    height: 0.125rem;
     background-color: var(--primary);
     position: absolute;
     bottom: -0.25rem;
