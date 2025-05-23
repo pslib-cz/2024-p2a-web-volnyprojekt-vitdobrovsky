@@ -1,6 +1,9 @@
 # Web Chaiomil
 
+Fiktivní startup Chaiomil prodává své čaje vlastní originální výroby. Vyrábí čaje podporující soustředění a kognitivní výkon, obohacené o přidaným kofeinem a dalšími látky na které pomůžou jak při práci, tak i při studiu.
 Tento web slouží jako představení firmy Chaiomil, nikoliv jako e-shop. Obsahuje následující stránky:
+
+## Obsah webu
 
 - **Home Page**: Úvodní stránka s přehledem firmy a její nabídky.
 - **Ukázka Produktů**: Představení vybraných produktů firmy.
@@ -15,6 +18,7 @@ Tento web slouží jako představení firmy Chaiomil, nikoliv jako e-shop. Obsah
 - [Grafický manuál](https://www.figma.com/proto/B24h2xsJNZRTXzGdHBUddV/Dobrovsk%C3%BDV%C3%ADt?node-id=131-20&p=f&t=5VibKQbR9MDPFFcq-0&scaling=scale-down-width&content-scaling=fixed&page-id=131%3A19&hide-ui=1)
 - [Moodboard](https://www.figma.com/proto/B24h2xsJNZRTXzGdHBUddV/Dobrovsk%C3%BDV%C3%ADt?node-id=131-3&p=f&t=5VibKQbR9MDPFFcq-0&scaling=min-zoom&content-scaling=fixed&page-id=131%3A2&hide-ui=1)
 
-## O Firmě
-
-Fiktivní startup Chaiomil prodává své čaje vlastní originální výroby. Vyrábí čaje podporující soustředění a kognitivní výkon, obohacené o přidaným kofeinem a dalšími látky na které pomůžou jak při práci, tak i při studiu.
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+<img src="readme-images/desktop.png">
+<img src="readme-images/mobile.png">
+</div>
