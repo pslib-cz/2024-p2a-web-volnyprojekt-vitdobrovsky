@@ -16,7 +16,8 @@
   border-radius: 1px;
   --rotate-time: 0.2s;
   --move-time: 0.2s;
-  transition: translate var(--move-time) ease var(--rotate-time), bottom var(--move-time) ease var(--rotate-time), top var(--move-time) ease var(--rotate-time), rotate var(--rotate-time) ease;
+  transition: translate var(--move-time, 0.2s) ease var(--rotate-time, 0.2s), bottom var(--move-time, 0.2s) ease var(--rotate-time, 0.2s), top var(--move-time, 0.2s) ease var(--rotate-time, 0.2s),
+    rotate var(--rotate-time, 0.2s) ease;
 }
 .hamburger__line:nth-child(1) {
   top: 0;
@@ -29,7 +30,7 @@
   bottom: 0;
 }
 .hamburger--active .hamburger__line {
-  transition: translate var(--move-time) ease, bottom var(--move-time) ease, top var(--move-time) ease, rotate var(--rotate-time) ease var(--move-time);
+  transition: translate var(--move-time, 0.2s) ease, bottom var(--move-time, 0.2s) ease, top var(--move-time, 0.2s) ease, rotate var(--rotate-time, 0.2s) ease var(--move-time, 0.2s);
 }
 .hamburger--active .hamburger__line:nth-child(1) {
   top: 50%;
@@ -49,7 +50,7 @@
 .navbar {
   --padding-x: 12px;
   --padding-y: 16px;
-  margin: var(--page-padding) var(--page-padding) 0 var(--page-padding);
+  margin: var(--page-padding, 1rem) var(--page-padding, 1rem) 0 var(--page-padding, 1rem);
   padding: var(--padding-y, 16px) var(--padding-x, 12px);
   border-radius: 8px;
   background-color: #ffffffc2;
@@ -81,15 +82,15 @@
 }
 .navbar__link:not(.button) {
   display: block;
-  padding: var(--gap);
+  padding: var(--gap, 1rem);
   font-weight: 500;
 }
 .navbar__link.button {
-  margin-top: var(--gap);
+  margin-top: var(--gap, 1rem);
 }
 .navbar:has(.hamburger--active) {
   margin: 0;
-  padding: calc(var(--page-padding) + var(--padding-y, 16px)) calc(var(--page-padding) + var(--padding-x, 12px));
+  padding: calc(var(--page-padding, 1rem) + var(--padding-y, 16px)) calc(var(--page-padding, 1rem) + var(--padding-x, 12px));
   padding-bottom: var(--padding-y, 16px);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -119,7 +120,7 @@
 /* tag */
 .tag {
   font-size: 0.75rem;
-  background-color: var(--primary);
+  background-color: var(--primary, #feeb41);
   border-radius: 1000px;
   font-weight: 400;
   text-transform: uppercase;
@@ -146,8 +147,8 @@
 /* card */
 .card {
   position: relative;
-  background-color: var(--secondary);
-  color: var(--text-light);
+  background-color: var(--secondary, #313b4e);
+  color: var(--text-light, #ffffff);
   padding: 1rem;
   border-radius: 16px;
 }
@@ -163,8 +164,8 @@
 }
 .swiper-slide {
   position: relative;
-  background-color: var(--secondary);
-  color: var(--text-light);
+  background-color: var(--secondary, #313b4e);
+  color: var(--text-light, #ffffff);
   border-radius: 16px;
   padding: 1.25rem;
   box-sizing: border-box;
@@ -179,11 +180,11 @@
 }
 .swiper-pagination-bullet {
   opacity: 1;
-  background-color: var(--text-light);
+  background-color: var(--text-light, #ffffff);
   transition: background-color 0.2s ease;
 }
 .swiper-pagination-bullet-active {
-  background: var(--primary);
+  background: var(--primary, #feeb41);
   box-shadow: none;
 }
 .swiper__image {
@@ -202,7 +203,7 @@
 
 /* cta */
 .cta {
-  padding: 0 var(--page-padding);
+  padding: 0 var(--page-padding, 1rem);
   display: grid;
   place-items: center;
   gap: 1rem;
@@ -215,8 +216,8 @@
 
 /* from */
 .form {
-  background-color: var(--secondary);
-  color: var(--text-light);
+  background-color: var(--secondary, #313b4e);
+  color: var(--text-light, #ffffff);
   padding: 1.5rem;
   border-radius: 16px;
   display: flex;
@@ -231,7 +232,7 @@
   display: block;
   margin-bottom: -0.5rem;
   margin-left: 0.4rem;
-  background-color: var(--secondary);
+  background-color: var(--secondary, #313b4e);
   position: relative;
   width: fit-content;
 }
@@ -239,7 +240,7 @@
   display: block;
   padding: 1rem 0.5rem;
   background-color: transparent;
-  border: 1px solid var(--text-light);
+  border: 1px solid var(--text-light, #ffffff);
   margin-bottom: 1.5rem;
   color: inherit;
   font-weight: 300;
@@ -247,7 +248,7 @@
 }
 .form__input:focus {
   outline: none;
-  border-color: var(--primary);
+  border-color: var(--primary, #feeb41);
 }
 .form__button {
   display: block;
@@ -273,11 +274,11 @@
   transition: fill 0.2s ease-out;
 }
 .footer__water--loaded {
-  fill: var(--primary);
+  fill: var(--primary, #feeb41);
 }
 .footer__content {
-  background-color: var(--primary);
-  padding: 2rem var(--page-padding);
+  background-color: var(--primary, #feeb41);
+  padding: 2rem var(--page-padding, 1rem);
 }
 .footer__wrapper {
   display: grid;
@@ -334,10 +335,10 @@
     justify-content: space-between;
     margin-top: 1rem;
     padding: 0.75rem 1rem;
-    max-width: var(--section-max-width);
+    max-width: var(--section-max-width, 1280px);
     margin-inline: auto;
-    right: var(--page-padding);
-    left: var(--page-padding);
+    right: var(--page-padding, 1rem);
+    left: var(--page-padding, 1rem);
   }
   .navbar--scrolled {
     margin-top: 0;
@@ -363,7 +364,7 @@
   }
   .navbar__link.button {
     margin-top: 0;
-    margin-left: var(--gap);
+    margin-left: var(--gap, 1rem);
   }
 
   /* swiper */
@@ -385,7 +386,7 @@
   .swiper-button-prev,
   .swiper-button-next {
     display: block;
-    color: var(--text-light);
+    color: var(--text-light, #ffffff);
     top: auto;
     bottom: 2.5rem;
     transform: translateY(50%) scale(0.6);
@@ -409,7 +410,7 @@
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: var(--section-max-width);
+    max-width: var(--section-max-width, 1280px);
     margin-inline: auto;
   }
   .footer a:hover {

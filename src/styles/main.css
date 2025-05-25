@@ -54,7 +54,7 @@
   }
   .page__small-intro,
   .page__intro {
-    padding: 7rem var(--page-padding) 0 var(--page-padding);
+    padding: 7rem var(--page-padding, 1rem) 0 var(--page-padding, 1rem);
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -69,7 +69,7 @@
   }
   .page__intro-products {
     --offset-to-middle: -30%;
-    padding: 0 calc(var(--page-padding) + 0.5rem);
+    padding: 0 calc(var(--page-padding, 1rem) + 0.5rem);
     display: flex;
     justify-content: center;
     align-items: end;
@@ -77,7 +77,7 @@
     animation: load-up 1s ease-out;
   }
   .page__intro-product:first-child {
-    margin-right: var(--offset-to-middle);
+    margin-right: var(--offset-to-middle, -30%);
     animation: intro-product-left 1s ease-out forwards;
   }
   .page__intro-product:nth-child(2) {
@@ -85,23 +85,23 @@
     z-index: 10;
   }
   .page__intro-product:last-child {
-    margin-left: var(--offset-to-middle);
+    margin-left: var(--offset-to-middle, -30%);
     animation: intro-product-right 1s ease-out forwards;
   }
 
   /* product overview */
   .page__product-overview {
     --offset: 5rem;
-    padding: calc(var(--section-gap) + var(--offset)) var(--page-padding);
-    margin-top: calc(-1 * var(--offset));
-    background-color: var(--primary);
+    padding: calc(var(--section-gap, 7.75rem) + var(--offset, 5rem)) var(--page-padding, 1rem);
+    margin-top: calc(-1 * var(--offset, 5rem));
+    background-color: var(--primary, #feeb41);
     border-top-left-radius: 100% 5%;
     border-top-right-radius: 100% 5%;
     border-bottom-left-radius: 100% 5%;
     border-bottom-right-radius: 100% 5%;
     overflow: hidden;
     display: grid;
-    gap: var(--section-gap);
+    gap: var(--section-gap, 7.75rem);
   }
   .page__benefit-cards {
     display: grid;
@@ -130,10 +130,10 @@
     --offset: -3rem;
   }
   .page__product-introduction-row:nth-child(2n + 2) .page__product-introduction-image {
-    margin-left: var(--offset);
+    margin-left: var(--offset, -3rem);
   }
   .page__product-introduction-row:nth-child(2n + 1) .page__product-introduction-image {
-    margin-right: var(--offset);
+    margin-right: var(--offset, -3rem);
   }
   .page__product-introduction-button {
     margin-top: 1.25rem;
@@ -141,22 +141,23 @@
 
   /* product list */
   .page__product-list {
-    padding: var(--section-gap) var(--page-padding);
+    padding: var(--section-gap, 7.75rem) var(--page-padding, 1rem);
     overflow: hidden;
   }
 
   /* about products */
   .page__about-products {
-    padding: var(--section-gap) var(--page-padding);
+    padding: var(--section-gap, 7.75rem) var(--page-padding, 1rem);
     overflow: hidden;
   }
-  .page__about-products .page__product-introduction-content {
+  .page__about-products .page__product-introduction-about {
+    display: grid;
     gap: 5.25rem;
   }
 
   /* contact */
   .page__contact {
-    padding: var(--section-gap) var(--page-padding);
+    padding: var(--section-gap, 7.75rem) var(--page-padding, 1rem);
     padding-bottom: 0;
     display: grid;
     gap: 2rem;
@@ -179,13 +180,13 @@
 
   /* page footer */
   .page__footer {
-    margin-top: var(--section-gap);
+    margin-top: var(--section-gap, 7.75rem);
   }
 
   /* tablet */
   @media screen and (min-width: 768px) {
     :root {
-      --page-padding: var(--desktop-padding);
+      --page-padding: var(--desktop-padding, 2rem);
       --section-gap: 13rem;
     }
     .page--bg .page__content {
@@ -198,7 +199,7 @@
     .page__product-list,
     .page__about-products,
     .page__contact {
-      max-width: var(--section-max-width);
+      max-width: var(--section-max-width, 1280px);
       margin-inline: auto;
     }
 

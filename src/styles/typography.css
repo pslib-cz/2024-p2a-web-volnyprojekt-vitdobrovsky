@@ -1,6 +1,6 @@
 html {
   font-family: "Inter", sans-serif;
-  color: var(--text);
+  color: var(--text, #313b4e);
   font-size: 1rem;
 }
 
